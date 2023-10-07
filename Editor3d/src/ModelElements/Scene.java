@@ -14,7 +14,7 @@ public class Scene {
     }
 
     public <Type> Type method1(Type obj) {
-        return obj;
+        return (Type) obj;
     }
 
     public <Type> Type method2(Type obj1, Type obj2) {

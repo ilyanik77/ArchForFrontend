@@ -16,7 +16,7 @@ public class ModelStore implements iModelChanger {
     public List<Camera> cameras;
     private iModelChangeObserever[] changeObserevers;
 
-    public ModelStore(iModelChangeObserever[] changeObserevers) {
+    public ModelStore(iModelChangeObserever[] changeObserevers) throws Exception {
         this.changeObserevers = changeObserevers;
 
         this.models = new ArrayList<PoligonalModel>();
@@ -24,11 +24,11 @@ public class ModelStore implements iModelChanger {
         this.flashes = new ArrayList<Flash>();
         this.cameras = new ArrayList<Camera>();
 
-        // List<Texture> textures = new ArrayList<>();
-        // models.add(new PoligonalModel(textures));
-        // flashes.add(new Flash());
-        // cameras.add(new Camera());
-        // scenes.add(0, new Scene(models, flashes, cameras)); --добавлено, после просмотра второго семинара.
+        List<Texture> textures = new ArrayList<>();
+        models.add(new PoligonalModel(textures));
+        flashes.add(new Flash());
+        cameras.add(new Camera());
+        scenes.add(new Scene(0, models, flashes, cameras)); //--добавлено, после просмотра второго семинара.
 
     }
 

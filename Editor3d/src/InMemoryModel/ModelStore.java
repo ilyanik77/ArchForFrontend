@@ -6,6 +6,7 @@ import ModelElements.Camera;
 import ModelElements.Flash;
 import ModelElements.PoligonalModel;
 import ModelElements.Scene;
+import ModelElements.Texture;
 
 public class ModelStore implements iModelChanger {
     
@@ -22,6 +23,13 @@ public class ModelStore implements iModelChanger {
         this.scenes = new ArrayList<Scene>();
         this.flashes = new ArrayList<Flash>();
         this.cameras = new ArrayList<Camera>();
+
+        // List<Texture> textures = new ArrayList<>();
+        // models.add(new PoligonalModel(textures));
+        // flashes.add(new Flash());
+        // cameras.add(new Camera());
+        // scenes.add(0, new Scene(models, flashes, cameras)); --добавлено, после просмотра второго семинара.
+
     }
 
     public Scene getScena(int id) {

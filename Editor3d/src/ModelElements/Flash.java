@@ -9,6 +9,7 @@ public class Flash {
 
     public Point3d location;
     public Angle3d angle;
+    //public java.awt.Color color --добавлено, после просмотра второго семинара.
     public Color color;
     public Float power;
 

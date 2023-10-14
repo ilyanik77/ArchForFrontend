@@ -7,7 +7,11 @@ import java.util.Date;
  */
 public class Ticket{
 
-
+    private int routeNumber;
+    private int place;
+    private int price;
+    private Date date;
+    private boolean isValid;
 
     public Ticket(int routeNumber, int place, int price, Date date, boolean isValid) {
         this.routeNumber = routeNumber;
@@ -16,6 +20,27 @@ public class Ticket{
         this.date = date;
         this.isValid = isValid;
     }
+
+    public int getRouteNumber() {
+        return routeNumber;
+    }
+
+    public int getPlace() {
+        return place;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public boolean isValid() {
+        return isValid;
+    }
+
 
 
     @Override
@@ -62,6 +87,10 @@ public class Ticket{
         if (isIt) {
             return true;
         }
+        return false;
+    }
+
+    public boolean getValid() {
         return false;
     }
 }

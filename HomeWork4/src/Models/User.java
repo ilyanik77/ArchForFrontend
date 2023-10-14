@@ -7,6 +7,10 @@ import java.util.Objects;
  */
 public class User {
 
+    private int id;
+    private String userName;
+    private int hashPassword;
+    private long cardNumber;
 
 
     public User(int id, String userName, int hashPassword, long cardNumber) {
@@ -15,6 +19,40 @@ public class User {
         this.hashPassword = hashPassword;
         this.cardNumber = cardNumber;
     }
+
+    
+
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public void setCardNumber(long cardNumber) {
+        this.cardNumber = cardNumber;
+    }
+
+    public int getHashPassword() {
+        return hashPassword;
+    }
+
+    public void setHashPassword(int hashPassword) {
+        this.hashPassword = hashPassword;
+    }
+
+    public long getCardNumber() {
+        return cardNumber;
+    }
+
+
+    
 
 
     @Override
